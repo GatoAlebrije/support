@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Info Card</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f4f4f9;
+            font-family: Arial, sans-serif;
+            background-color: #e4f0ff;
+            background-image: url("data:image/svg+xml,%3Csvg width='80' height='80' viewBox='0 0 80 80' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%232d76de' fill-opacity='0.13'%3E%3Cpath d='M50 50c0-5.523 4.477-10 10-10s10 4.477 10 10-4.477 10-10 10c0 5.523-4.477 10-10 10s-10-4.477-10-10 4.477-10 10-10zM10 10c0-5.523 4.477-10 10-10s10 4.477 10 10-4.477 10-10 10c0 5.523-4.477 10-10 10S0 25.523 0 20s4.477-10 10-10zm10 8c4.418 0 8-3.582 8-8s-3.582-8-8-8-8 3.582-8 8 3.582 8 8 8zm40 40c4.418 0 8-3.582 8-8s-3.582-8-8-8-8 3.582-8 8 3.582 8 8 8z' /%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+        }
+        .card {
+            background: #ffffff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            overflow: hidden;
+            display: flex;
+            max-width: 500px;
+            width: 100%;
+            padding: 10px
+        }
+        .card img {
+            border-radius: 50%;
+            width: 100px;
+            height: 100px;
+            margin: 20px;
+            align-self: center;
+        }
+        .card-content {
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-self: center;
+        }
+        .info {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+
+        }
+        .info i {
+            margin-right: 10px;
+            color: #555;
+        }
+        .info p {
+            margin: 0;
+            color: #333;
+        }
+
+        
+    </style>
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <div class="card">
+        <img src="picture.jpg" alt="Your Photo">
+        <div class="card-content">
+            <div class="info">
+                <i class="fas fa-envelope"></i>
+                <p>gatoalebrije@gmail.com</p>
+            </div>
+            <div class="info">
+                <i class="fas fa-map-marker-alt"></i>
+                <p>Santo Domingo 120, 24156, Ciudad del Carmen Campeche, México</p>
+            </div>
+            <div class="info">
+                <i class="fas fa-phone"></i>
+                <p>+52 9381042667</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
